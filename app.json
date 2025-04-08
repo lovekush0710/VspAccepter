@@ -1,0 +1,48 @@
+{
+  "name": "request accepeter",
+  "description": "A Telegram  bot.",
+  "logo": "https://te.legra.ph/file/9fa2101b77407dbec7d31.jpg",
+  "keywords": ["telegram", "approve-bot", "python", "pyrogram"],
+  
+  "repository": "https://github.com/noob-mukesh/requestaccepter",
+  "stack": "heroku-22",
+   "addons": [
+      {
+         "options": {
+            "version": "15"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "telegram bot token here",
+      "required": true
+    },
+   
+    "START_IMG": {
+      "description": "Start Image For Bot.",
+      "required": false
+    },
+    "APPROVED": {
+      "description": "either on or off so that bot can approve it",
+      "required": false
+    },
+    "API_ID": {
+      "description": "telegram api id here",
+      "required": true
+    },
+    "MAIN_CHAT_ID": {
+      "description": "telegram main chat id here where u want user must be present",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "owner id here",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "telegram api hash here",
+      "required": true
+    }
+  }
+}

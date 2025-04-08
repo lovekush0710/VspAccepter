@@ -1,0 +1,11 @@
+aiofiles
+pyrofork
+requests
+asyncio
+pymongo
+motor
+aiohttp
+pyrofork
+pytz
+datetime
+TgCrypto
