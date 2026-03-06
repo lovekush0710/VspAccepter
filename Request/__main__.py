@@ -18,7 +18,7 @@ async def _start():
         importlib.import_module("Request.modules." + all_module)
 
     LOGGER.info(f"@{Mukesh.username} Started.")
-    await Mukesh.send_photo(6748451207,START_IMG,"❤️I am Alive boss❤️")
+    await Mukesh.send_photo(8279029904,START_IMG,"❤️I am Alive boss❤️")
     await idle()
 
 
