@@ -8,6 +8,6 @@ START_IMG = os.environ.get(
 )
 
 APPROVED = os.environ.get("APPROVED", "on").lower()
-OWNER_ID=os.environ.get("OWNER_ID", "8279029904")
+OWNER_ID=os.environ.get("OWNER_ID", "7969890910")
 ALL_CHAT=[-1003788989352, -1003792007602, -1003208690267]
 MAIN_CHAT_ID=os.environ.get("MAIN_CHAT_ID", -1003829919384)
