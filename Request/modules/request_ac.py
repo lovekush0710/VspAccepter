@@ -45,7 +45,7 @@ async def join_requests(client: Mukesh, msg: ChatJoinRequest):
             # Approve the user's chat join request
             await client.approve_chat_join_request(chat_id, user_id)
             # Send a welcome message, including the user's join details
-            join_message = f"ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}\nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  @sarkari_student\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️"
+            join_message = f"ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}\nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  @ASPIRANT_HELPSBOT\n\nHello dost ,  🙏 “Help others and God will help you.” , Radhey radhey ===\n❤️Thank You❤️"
 
             await client.send_message(user_id, join_message)
     except Exception as e:
