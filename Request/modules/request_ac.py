@@ -37,10 +37,7 @@ async def join_requests(client: Mukesh, msg: ChatJoinRequest):
         # Check if the user is a member of the chat
         if user_id not in members:
             await client.decline_chat_join_request(chat_id, user_id)
-            return await client.send_message(user_id, f"ʜᴇʟʟᴏ {msg.from_user.mention} \nYour Request Channel {msg.chat.title} \n\n🚀 Welcome!
-📢 Channel shift થયો છે
-⚠️ Copyright આવે તો link આ bot માં મળશે
-❌ Bot delete કરશો નહીં 💯",
+            return await client.send_message(user_id, f"🚀 Welcome! {msg.from_user.mention} \n⚠️ Copyright આવે તો link આ bot માં મળશે\n❌ Bot delete કરશો નહીં 💯 \n\nJoin Main Channel:- https://t.me/+ySXWdGOMpfJmM2M5",
                               reply_markup=InlineKeyboardMarkup([
                                   [InlineKeyboardButton("Join Now", url="https://t.me/+ySXWdGOMpfJmM2M5")]
                               ]))
@@ -48,7 +45,7 @@ async def join_requests(client: Mukesh, msg: ChatJoinRequest):
             # Approve the user's chat join request
             await client.approve_chat_join_request(chat_id, user_id)
             # Send a welcome message, including the user's join details
-            join_message = f"​ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}\nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  @ASPIRANT_HELPSBOT\n\nHello dost , hu parth pandya કય કામ હોય તો [ @ASPIRANT_HELPSBOT ] આમાં મેસેજ કરી દેજો નવરો થઈ રિપ્લે આપી દેય ✨ “જે બીજાની મદદ કરે છે, તેની મદદ ભગવાન કરે છે.”===\n❤️Thank You❤️"
+            join_message = f"ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}\nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  @sarkari_student\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️"
 
             await client.send_message(user_id, join_message)
     except Exception as e:
@@ -78,12 +75,12 @@ async def join_requests(client: Mukesh, msg: ChatJoinRequest):
 #                 img=await client.download_media(chat_photo)
 #                 await client.send_photo(
 #                     chat_id=user_id,photo=img,
-#                     caption=f"​ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}  \nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  ||@sarkari_student||\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️",
+#                     caption=f"ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}  \nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  ||@sarkari_student||\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️",
 #                     )
 #             else:
 #                 #  SEND MSG AFTER JOINING
 #                 await client.send_message(
-#                     user_id,f"​ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}  \nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  ||@sarkari_student||\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️",
+#                     user_id,f"ʜᴇʟʟᴏ {msg.from_user.mention}\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {msg.chat.title}  \nᴊᴏɪɴᴇᴅ ᴀᴛ: {ind_time}\n\nʏᴏᴜ ᴀᴘᴘʀᴏᴠᴇᴅ ʙʏ {Mukesh.mention} \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ  ||@sarkari_student||\n\nHello dost , mai aapka sarkari student bot aap hamare bot delete na karna sabhi premium members ki update , and sabhi information hamare bot par milegi ===\n❤️Thank You❤️",
 #                     )
 #     except Exception as E:
 #         print(E)
