@@ -37,7 +37,10 @@ async def join_requests(client: Mukesh, msg: ChatJoinRequest):
         # Check if the user is a member of the chat
         if user_id not in members:
             await client.decline_chat_join_request(chat_id, user_id)
-            return await client.send_message(user_id, f"ʜᴇʟʟᴏ {msg.from_user.mention} \nYour Request Channel {msg.chat.title} \n\n 🚀 Welcome!
+            return await client.send_message(user_id, f"""ʜᴇʟʟᴏ {msg.from_user.mention}
+Your Request Channel {msg.chat.title}
+
+🚀 Welcome!
 📢 Channel shift થયો છે
 ⚠️ Copyright આવે તો link આ bot માં મળશે
 ❌ Bot delete કરશો નહીં 💯"""
